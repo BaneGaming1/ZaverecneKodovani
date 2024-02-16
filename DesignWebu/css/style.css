@@ -1,0 +1,185 @@
+
+body {
+    font-family: 'Jaldi', sans-serif;
+}
+
+*{
+ margin: 0;
+ padding: 0;
+}
+.container {
+ background-image: url("../images/mainPageBackground.png");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 500px;
+ display: flex;
+ flex-direction: column; 
+ justify-content: flex-start; 
+ align-items: center; 
+ width: 100%;
+ position: relative;
+}
+
+.navbar__menu {
+ display: flex;
+ list-style-type: none;
+ color: white;
+ position: absolute;
+ top: 20px;
+ right: 50px;
+ font-size: 36px;
+ /* relativní jednotky aby se navigace zmenšovala
+ top: 2vw; 
+ right: 5vw; 
+ font-size: 2vw; 
+ */
+}
+
+.navbar__item {
+ margin-left: 20px;
+}
+
+.navbar__item a {
+ text-decoration: none;
+ color: white;
+}
+
+.navbar__item i.material-icons {
+ font-size: 36px; 
+}
+
+.navbar__item:last-child {
+ margin-left: 50px; 
+}
+
+h1 {
+ color: white;
+ text-align: center; 
+ font-size: 144px;
+ font-family: 'Jockey One', sans-serif;
+ position: absolute;
+ left: 50%; 
+ top: 50%; 
+ transform: translate(-50%, -50%);
+ width: 100%; 
+ height: auto; 
+}
+
+
+
+.container p {
+ color: white;
+ font-size: 36px;
+ position: absolute; 
+ top: 20px; 
+ left: 20px; 
+}
+
+/* text který se zmenšuje
+.container p {
+ color: white;
+ font-size: 2vw; 
+ position: absolute; 
+ top: 2vw; 
+ left: 2vw; 
+}
+*/
+
+
+/*Main Content*/
+.searchbar {
+ display: flex;
+ align-items: center;
+ justify-content: center; 
+ margin-right: auto;
+ margin-top: 50px; 
+}
+.searchbar input[type="text"] {
+ padding: 15px; 
+ width: 70vh; 
+ font-size: 20px; 
+ border: 2px solid rgb(100, 100, 100);
+ border-radius: 10px;
+}
+.searchbar button {
+ padding: 12px; 
+ border: none;
+ background: white;
+ cursor: pointer;
+}
+
+.btn{
+ background-color: rgba(71, 82, 235, 0);
+ border: 2px solid black;
+ color: black; 
+ padding: 17px 20px;
+ cursor:pointer;  
+ margin: 10px;
+}
+
+.mainContent {
+ display: flex;
+ align-items: center; 
+ justify-content: center;
+ text-align: center; 
+ margin-top: 100px;
+ margin-bottom: 100px;
+}
+
+.content, .image {
+ flex: 1;
+}
+
+.image img {
+ max-width: 50%; 
+ height: auto;
+}
+
+/*
+responze aby se obrázek přesunul nad text při zmenšení
+@media (max-width: 768px) {
+ .mainContent {
+   flex-direction: column-reverse;
+ }
+}
+*/
+
+/*Footer*/
+footer {
+ background-color: rgb(217, 217, 217);
+ padding-bottom: 25px;
+}
+
+footer hr{
+ width: 80%;
+ margin: 25px auto; 
+ border: 0.5px solid black;
+}
+
+footer p{
+ font-size: 24px;
+ margin-bottom: 0;
+}
+
+.Copyright{
+ text-align: right;
+ margin-right: 20px;
+}
+
+.SocialMedia img {
+ width: 42px; 
+ height: 42px; 
+ margin-right: 10px; 
+ border: 1px solid black;
+ border-radius: 10%; 
+}
+
+a {
+ color: black; 
+ text-decoration: none; 
+}
+
+footer .material-icons {
+ font-size: 42px; 
+}
