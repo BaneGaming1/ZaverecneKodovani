@@ -41,10 +41,6 @@ body {
   background-size: cover;
 }
 
-
-
-
-
 .navbar__menu {
  display: flex;
  list-style-type: none;
@@ -53,11 +49,6 @@ body {
  top: 20px;
  right: 50px;
  font-size: 36px;
- /* relativní jednotky aby se navigace zmenšovala
- top: 2vw; 
- right: 5vw; 
- font-size: 2vw; 
- */
 }
 
 .navbar__item {
@@ -90,8 +81,6 @@ h1 {
  height: auto; 
 }
 
-
-
 .container p {
  color: white;
  font-size: 36px;
@@ -100,8 +89,18 @@ h1 {
  left: 20px; 
 }
 
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 
-
+.hamburger-menu i.material-icons {
+  font-size: 36px;
+  color: white;
+}
 
 /*Main Content (index)*/
 .index-main .searchbar {
@@ -164,12 +163,14 @@ h1 {
   font-size: 30px;
 }
 
-/*responze aby se obrázek přesunul nad text při zmenšení*/
+/*responze aby se obrázek přesunul nad text při zmenšení
 @media (max-width: 768px) {
  .mainContent {
    flex-direction: column-reverse;
+   align-items: center; 
+   text-align: center;
  }
-}
+}*/
 
 
 /*Main Content (about)*/
@@ -215,6 +216,7 @@ h1 {
 .about-main .content {
   flex: 1;
   margin-right: 80px;
+  
  }
  
  .about-main .image{
@@ -226,6 +228,7 @@ h1 {
   height: auto;
  }
 
+
 /*Footer*/
 footer {
  background-color: rgb(217, 217, 217);
@@ -235,7 +238,6 @@ footer {
 footer hr{
  width: 80%;
  margin: 25px auto; 
- /*border: 0.5px solid black;*/
 }
 
 footer p{
@@ -253,7 +255,7 @@ footer p{
  height: 42px; 
  margin-right: 10px; 
  border: 1px solid black;
- border-radius: 10%; 
+ border-radius: 10%;
 }
 
 a {
@@ -263,4 +265,44 @@ a {
 
 footer .material-icons {
  font-size: 42px; 
+}
+
+
+/*Responze*/
+@media (max-width: 950px) {
+  h1 {
+    font-size: 100px; 
+  }
+
+  .container p{
+    font-size: 24px;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 80px; 
+  }
+
+  .container p{
+    font-size: 20px;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    font-size: 14px;
+  }
 }
