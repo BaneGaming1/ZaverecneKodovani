@@ -163,15 +163,35 @@ h1 {
   font-size: 30px;
 }
 
-/*responze aby se obrázek přesunul nad text při zmenšení
-@media (max-width: 768px) {
- .mainContent {
-   flex-direction: column-reverse;
-   align-items: center; 
-   text-align: center;
- }
-}*/
+@media (max-width: 1000px) {
+  .index-main .mainContent {
+    flex-direction: column; 
+    align-items: center; 
+  }
 
+  .index-main .content {
+    width: 80%; 
+    margin-left: 0; 
+    margin-right: 0; 
+    text-align: center; 
+  }
+
+  .index-main .image {
+    width: 70%; 
+    margin-right: 0; 
+    margin-left: 0; 
+    margin-bottom: 20px; 
+  }
+
+  .index-main .btn {
+    padding: 16px 24px; 
+    font-size: 20px; 
+  }
+
+  .index-main .content p {
+    font-size: 24px; 
+  }
+}
 
 /*Main Content (about)*/
 .about-main h3 {
@@ -198,11 +218,17 @@ h1 {
 .about-main h2{
   font-family: 'Jockey One', sans-serif;
   font-size: 64px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  text-align: left;
 }
 
 .about-main p {
   font-size: 32px;
+}
+
+.about-main  .mainContent p {
+  font-size: 32px;
+  text-align: justify;
 }
 
 .about-main .mainContent {
@@ -216,17 +242,55 @@ h1 {
 .about-main .content {
   flex: 1;
   margin-right: 80px;
-  
+  margin-bottom: auto;
  }
  
  .about-main .image{
    flex: 1;
    margin-left: 80px;
+   margin-right: 50px;
  }
+
  .about-main .image img {
   max-width: 100%; 
   height: auto;
  }
+
+
+ @media (max-width: 1000px) {
+  .about-main .mainContent {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .about-main .image {
+    width: 70%; 
+    margin-right: 0px;
+    margin-left: 0px; 
+    margin-bottom: 20px; 
+  }
+
+  .about-main .content {
+    width: 80%; 
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .about-main p {
+    font-size: 20px;
+  }
+
+  .about-main  .mainContent p {
+    font-size: 20px;
+  }
+
+  .about-main h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
 
 
 /*Footer*/
@@ -285,6 +349,12 @@ footer .material-icons {
   .hamburger-menu {
     display: block;
     font-size: 24px;
+  }
+
+  .mainContent {
+    flex-direction: column-reverse;
+    align-items: center; 
+    text-align: center;
   }
 }
 
