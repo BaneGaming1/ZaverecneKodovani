@@ -356,6 +356,38 @@ footer .material-icons {
   font-size: 24px;
   list-style-type: none;
 }
+
+.container h2{
+  font-size: 45px;
+  font-family: 'Jockey One', sans-serif;
+  font-weight: 100;
+  
+}
+.inputBox{
+  margin-top: 10px;
+}
+.inputBox input {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  resize: none;
+}
+.inputBox textarea{
+
+  width: 100%;
+  height: 120px;
+  border: 3px solid black;
+}
+.container button{
+padding: 15px;
+
+ border: 1px solid black;
+  
+}
  
 /*Responze*/
 @media (max-width: 950px) {
